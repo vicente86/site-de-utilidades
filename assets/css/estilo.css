@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: PoiretOne;
+    src: url(../fontes/PoiretOne-Regular.ttf);
+}
+/* RESET E PADRÃO */ 
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size:100%;
+    margin:0;
+    padding: 0;
+}
+
+h1 {font-size:28pt;}
+h2 {font-size:26pt;}
+h3 {font-size:24pt;}
+h4 {font-size:22pt;}
+h5 {font-size:20pt;}
+h6 {font-size:18pt;}
+
+/* BARRA DE SCROOL*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #350404;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7c2d2d;
+  }
+
+/* CABEÇALHO */
+
+header {
+    box-shadow: 0 2px 10px #666666;
+    margin-bottom: 40px;
+    padding: 50px 0;
+}
+
+header h1{
+    margin:auto;
+    width: 257px;
+    font-family: PoiretOne;
+    font-weight: lighter;
+    font-size: 28pt;
+}
+
+header #btnDark {
+    position: absolute;
+    top: 40px;
+    left: 90vw;
+}
+
+
+header label span {
+    background-color: #c9c9c9;
+    border:1px solid #837e7e;
+    border-radius: 80px;
+    padding: 5px 24px;
+}
+
+header label span i {
+    position: absolute;
+    background-image: url(../icones/sol.png);
+    background-repeat: no repeat;
+    background-size: 100%;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    top:-3px;
+    left: 15px;
+    transition: all 0.5s;
+
+}
+
+header label input {
+    visibility: hidden;
+}
+
+header label input:checked ~ span {
+    background-color: #08b472;
+}
+
+header label input:checked ~ span i {
+    left: 40px;
+    background-image: url(../icones/lua2.png);
+    transition: all 0.5s;
+}
+
+/*CONTAINER 1*/
+
+.container1 {
+    width:90%;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px #666666;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+
+.container1 #resp {
+    padding: 20px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/* APPs */
+.introdesc {
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.introdesc p {
+    padding: 20px; 
+    text-align: justify;
+}
+
+.introdesc h4 { 
+    text-align: center;
+}
+
+.introdesc h2, h4 {
+    font-family: PoiretOne;
+    font-weight: lighter;
+}
+
+.app {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    box-shadow: 0 2px 10px #666666;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.container1 #app1 {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    box-shadow: 0 2px 10px #666666;
+    border-radius: 10px;
+    margin: auto;
+}
+
+
+
+/*--------------------------------------------------------------------------*/
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    margin-top: 40px;
+    padding: 50px 0;
+    box-shadow: 0 2px 10px #666666;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4f70db;
+}
+
+
+
+/*--------------------------------------------------------------------------*/
+
+
+
+/* TELA DE NO MÁXIMO 630px */
+
+@media only screen and (max-width: 630px){
+    
+    header h1 {
+        margin:auto;
+        width:202px;
+        font-size: 22pt;
+    }
+
+    header label span i {
+        top:-2px;
+        left: 14px;
+    }
+
+    header label input:checked ~ span i {
+        top: -2px;
+        left: 40px;
+    }
+
+    header #btnDark {
+        top: 10px;
+        left: 85vw;
+    }
+
+    .container1 #app1 {
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        border: 3px solid #fff;
+        border-radius: 10px;
+        margin: auto;
+    }
+}
+
+/* TELA DE NO MÁXIMO 419px */
+
+@media only screen and (max-width: 419px){
+    
+    header h1 {
+        font-size: 18pt;
+    }
+
+    header label span i {
+        top:15px;
+        left: 2px;
+    }
+
+    header label input:checked ~ span i {
+        top: 15px;
+        left: 28px;
+    }
+
+    header #btnDark {
+        top: 10px;
+        left: 85vw;
+    }
+
+}

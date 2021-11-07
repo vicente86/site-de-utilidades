@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <title>SITE DE UTILIDADES</title>
+</head>
+<body>
+
+<!-- CABEÇALHO -->
+
+    <header>
+        <h1>Site de Utilitários</h1>
+        
+        <div id="btnDark">
+            <label>
+                <input type="checkbox" id="btnChecar" onclick="checar()">
+                <span><i></i></span>
+            </label>    
+        </div>       
+    </header>
+
+    <div class="container1">
+        <div class="introdesc" id="introsaude">
+            <h2>Peso Ideal</h2>
+            <p>Manter a saúde em dias, em meio a tantos produtos industrializados e gordurosos é um desafio em tanto, e como primeiro passo, podemos começar verificando com um calculo simples nosso peso ideal por meio de nossa altura.<br>Esse calculo é só uma base, pois, o resultado é muito agressivo "na minha opinião", é como se o resultado fosse você com só o coro e o osso. </p>
+            <br>
+            <h4>Calculando o Peso Ideal</h4>
+        </div>
+        
+        <div class="app" id="app1">
+            <input type="number" placeholder="Altura" id="pialtura">
+            
+            <br>
+            <br>
+            
+            <select id="pisexo">
+                <option value="">Sexo</option>
+                <option value="M">M</option>
+                <option value="F">F</option>
+            </select>
+            
+            <br>
+            <br>
+            
+            <button type="button" onclick="app1()">Executar</button>
+            
+            <br>
+            <br>
+            
+            <input type="text" id="piresp" disabled>
+        </div>
+
+        <div class="introdesc" id="introsaude2">
+            <h2>IMC</h2>
+            <p>IMC significa Índice de Massa Corporal e é um parâmetro utilizado para saber se o peso está de acordo com a altura, o que pode interferir diretamente na saúde e qualidade de vida da pessoa. Assim, a partir do resultado do IMC é possível saber também se a pessoa está dentro do peso ideal e também identificar sobrepeso, obesidade ou desnutrição em crianças, adolescentes, adultos ou idosos.<br>
+            O peso deve estar em kg e a altura em metros, e o resultado é dado em kg/m2. Depois de obter o resultado, é possível verificar em que faixa o IMC se encontra, podendo indicar:<br><br>
+
+                - Magreza, quando o resultado é menor que 18,5 kg/m2;<br>
+                - Normal, quando o resultado está entre 18,5 e 24,9 kg/m2;<br>
+                - Sobrepeso, quando o resultado está entre 24,9 e 30 kg/m2;<br>
+                - Obesidade, quando o resultado é maior que 30 kg/m2.<br>
+            </p>
+            <br>
+            <h4>Calculando o IMC</h4>
+        </div>
+
+        <div class="app" id="app2">
+            
+            <input type="number" placeholder="Altura" id="imcaltura">
+            
+            <br>
+            <br>
+            
+            <input type="number" placeholder="Peso" id="imcpeso">
+
+            <br>
+            <br>
+            
+            <button type="button" onclick="app2()">Executar</button>
+            
+            <br>
+            <br>
+            
+            <input type="text" id="imcresp" disabled>
+            
+        </div>
+
+        
+
+    </div>
+    
+    <footer>
+        &copy; Daniel Vicente Rodrigues Ferreira<br><br>
+        Minhas redes:<br><br>
+        <a href="https://github.com/vicente86" target="_blank">GitHub</a><br>
+        <a href="https://www.linkedin.com/in/daniel-vicente-7368bb172/" target="_blank">Linkedin</a><br>
+
+    </footer>
+<!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
